@@ -26,7 +26,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gainedExplosionPowerup && collision.gameObject.tag != "RedLaser")
+        if (gainedExplosionPowerup && collision.gameObject.tag != "RedLaser" && collision.gameObject.tag != "Player")
         {
             Instantiate(Explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);

@@ -11,6 +11,10 @@ public class EnemyOrangeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(transform.position.y <= -8.5f)
+        {
+            Destroy(this.gameObject);
+        }
         transform.position += new Vector3(0, -6.8f, 0) * Time.deltaTime;
     }
     void FireLaser()

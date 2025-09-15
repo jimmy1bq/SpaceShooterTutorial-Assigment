@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public static GameManager instnace;
     [SerializeField] GameObject gameOverScreen;
     [SerializeField] TextMeshProUGUI ScoreDisplay;
+    [SerializeField] GameObject PlayerTwo;
+    [SerializeField] GameObject PlayerOne;
+    bool player2spawn = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,6 +30,12 @@ public class GameManager : MonoBehaviour
         if(gameOver && Input.GetKeyDown(KeyCode.R)){
           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if(score >= 100 && player2spawn == false){
+            Debug.Log("Player 2 Spawned");
+            //works
+            Instantiate(PlayerTwo, new Vector3(-0.01f, -7.96f, -0.01f), Quaternion.identity);
+            player2spawn = true;
+        }
     }
     public void AddScore(int newScoreValue)
     {
@@ -36,6 +45,11 @@ public class GameManager : MonoBehaviour
     public int GetScore()
     {
         return score;
+    }
+
+    public bool GetBool()
+    {
+        return gameOver;
     }
     public void GameOver()
     {

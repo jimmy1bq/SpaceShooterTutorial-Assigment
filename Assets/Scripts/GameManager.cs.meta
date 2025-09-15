@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 01557c5452df9404fadf158d0892eda6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameOverScreen: {instanceID: 0}
+  - ScoreDisplay: {instanceID: 0}
+  - PlayerTwo: {fileID: 7192171855166727524, guid: 9816a54649d2a4848ad708a54377a3a9, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

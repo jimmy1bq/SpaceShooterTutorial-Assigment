@@ -11,6 +11,10 @@ public class RedLaserScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y <= -8.96f)
+        {
+            Destroy(this.gameObject);
+        }
         transform.position += new Vector3(0, -10f, 0) * Time.deltaTime;
     }
     private void OnTriggerEnter2D(Collider2D collision)
