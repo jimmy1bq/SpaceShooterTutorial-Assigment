@@ -29,7 +29,7 @@ public class EnemyOrangeScript : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
-        if (collision.gameObject.tag == "PlayerLaser" || collision.gameObject.tag == "PlayerExplosion")
+        if (collision.gameObject.tag == "PlayerLaser" || collision.gameObject.tag == "PlayerExplosion" || collision.gameObject.tag == "meteor")
         {
             GameManager.instnace.AddScore(20);
             Destroy(gameObject);

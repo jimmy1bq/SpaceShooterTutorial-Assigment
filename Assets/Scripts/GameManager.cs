@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI ScoreDisplay;
     [SerializeField] GameObject PlayerTwo;
     [SerializeField] GameObject PlayerOne;
+    [SerializeField] GameObject meteor;
     bool player2spawn = false;
 
 
@@ -30,11 +31,22 @@ public class GameManager : MonoBehaviour
         if(gameOver && Input.GetKeyDown(KeyCode.R)){
           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        if(score >= 100 && player2spawn == false){
+        if(score >= 200 && player2spawn == false){
             Debug.Log("Player 2 Spawned");
             //works
             Instantiate(PlayerTwo, new Vector3(-0.01f, -7.96f, -0.01f), Quaternion.identity);
             player2spawn = true;
+        }
+        if (score >= 1)
+        {
+           float randomnum = Random.Range(0,300);
+            if (randomnum == 1)
+            {
+                int randomx = Random.Range(-5, 6);
+                int randomy = Random.Range(-2, 2);
+                Instantiate(meteor, new Vector3(randomx, randomy, -0.01f), Quaternion.identity);
+                player2spawn = true;
+            }
         }
     }
     public void AddScore(int newScoreValue)

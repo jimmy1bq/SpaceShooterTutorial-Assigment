@@ -28,7 +28,7 @@ public class BlueEnemyScript : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
-        if (collision.gameObject.tag == "PlayerLaser" || collision.gameObject.tag == "PlayerExplosion")
+        if (collision.gameObject.tag == "PlayerLaser" || collision.gameObject.tag == "PlayerExplosion" || collision.gameObject.tag == "meteor")
         { Debug.Log(collision.gameObject.tag);
             Destroy(collision.gameObject);
             Destroy(this.gameObject);

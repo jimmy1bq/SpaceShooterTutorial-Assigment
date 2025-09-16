@@ -24,10 +24,10 @@ public class EnemyBlackScript : MonoBehaviour
         Destroy(gameObject);
         Destroy(otherComp.gameObject);
     }
-        if (otherComp.gameObject.tag == "PlayerLaser" || otherComp.gameObject.tag == "PlayerExplosion")
+        if (otherComp.gameObject.tag == "PlayerLaser" || otherComp.gameObject.tag == "PlayerExplosion" || otherComp.gameObject.tag == "meteor")
         {
 
-            Debug.Log(otherComp.gameObject.tag);
+           Debug.Log(otherComp.gameObject.tag);
             GameManager.instnace.AddScore(20);
             Destroy(gameObject);
             Destroy(otherComp.gameObject);
