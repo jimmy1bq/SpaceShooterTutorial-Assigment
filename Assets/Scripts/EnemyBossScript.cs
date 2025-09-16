@@ -78,7 +78,7 @@ public class EnemyBossScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D otherComp) {
         if (otherComp.gameObject.tag == "PlayerLaser" || otherComp.gameObject.tag == "PlayerExplosion" ) {
-            Debug.Log(otherComp.tag);
+          
             Hp -= 1;
             Destroy(otherComp.gameObject);
         }

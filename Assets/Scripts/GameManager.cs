@@ -31,9 +31,9 @@ public class GameManager : MonoBehaviour
         if(gameOver && Input.GetKeyDown(KeyCode.R)){
           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        if(score >= 200 && player2spawn == false){
-            Debug.Log("Player 2 Spawned");
-            //works
+       
+        if (score >= 50 && player2spawn == false){
+            
             Instantiate(PlayerTwo, new Vector3(-0.01f, -7.96f, -0.01f), Quaternion.identity);
             player2spawn = true;
         }

@@ -7,6 +7,8 @@ TagManager:
   - PlayerLaser
   - PlayerExplosion
   - RedLaser
+  - Boss
+  - meteor
   layers:
   - Default
   - TransparentFX

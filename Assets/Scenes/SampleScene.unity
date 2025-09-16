@@ -289,6 +289,7 @@ MonoBehaviour:
   ScoreDisplay: {fileID: 1457511641}
   PlayerTwo: {fileID: 7192171855166727524, guid: 9816a54649d2a4848ad708a54377a3a9, type: 3}
   PlayerOne: {fileID: 6312893717350363682, guid: 76a6418efffe16c469d2eb8efad89eb3, type: 3}
+  meteor: {fileID: 3956788895264344119, guid: 09faf090057078d41916cf44e5785d9a, type: 3}
 --- !u!4 &557876399
 Transform:
   m_ObjectHideFlags: 0
@@ -911,15 +912,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 759251540780672566, guid: 76a6418efffe16c469d2eb8efad89eb3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 759251540780672566, guid: 76a6418efffe16c469d2eb8efad89eb3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.96
+      value: -7.65
       objectReference: {fileID: 0}
     - target: {fileID: 759251540780672566, guid: 76a6418efffe16c469d2eb8efad89eb3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.01
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 759251540780672566, guid: 76a6418efffe16c469d2eb8efad89eb3, type: 3}
       propertyPath: m_LocalRotation.w
