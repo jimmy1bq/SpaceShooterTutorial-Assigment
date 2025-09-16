@@ -140,3 +140,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890abae70391125418e4edfbd5d57b62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  laser: {fileID: 7844258741254148914, guid: d92ea53dca9f3be4ca065e774742b1bd, type: 3}

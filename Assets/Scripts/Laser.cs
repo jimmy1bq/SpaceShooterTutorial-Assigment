@@ -30,7 +30,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             Instantiate(Explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
-    }
+         
+        }
 
     }
       

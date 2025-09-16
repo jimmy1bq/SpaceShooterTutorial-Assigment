@@ -19,8 +19,9 @@ public class meteor : MonoBehaviour
     {
         if (collision.gameObject.tag != "Boss")
         {
-            Destroy(gameObject);
+            print(collision.gameObject);
             Destroy(collision.gameObject);
+            Destroy(gameObject);
             Instantiate(minimeteor, new Vector3(transform.position.x + 0.5f, transform.position.y, 0), Quaternion.identity);
             Instantiate(minimeteor, new Vector3(transform.position.x - 0.5f, transform.position.y, 0), Quaternion.identity);
         }
