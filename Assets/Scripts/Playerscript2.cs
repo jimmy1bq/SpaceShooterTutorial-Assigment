@@ -16,7 +16,7 @@ public class Playerscript2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-        if (UnityEngine.Input.GetKeyDown(KeyCode.A) && GameManager.instnace.GetBool() != true)
+        if (UnityEngine.Input.GetKey(KeyCode.A) && GameManager.instnace.GetBool() != true)
         {
             if (transform.position.x - 0.1f <= -4.9) {
                 transform.position = new Vector3(-4.9f, posY, 0);
@@ -26,7 +26,7 @@ public class Playerscript2 : MonoBehaviour
                 transform.position += new Vector3(-0.1f, 0, 0);
             }
          }
-        if (UnityEngine.Input.GetKeyDown(KeyCode.D) && GameManager.instnace.GetBool() != true)
+        if (UnityEngine.Input.GetKey(KeyCode.D) && GameManager.instnace.GetBool() != true)
         {
           
             if (transform.position.x + 0.1f >= 4.9)

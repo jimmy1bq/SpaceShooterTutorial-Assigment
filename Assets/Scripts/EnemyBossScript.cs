@@ -14,8 +14,8 @@ public class EnemyBossScript : MonoBehaviour
     [SerializeField] GameObject BossLaser;
     [SerializeField] GameObject Player;
     [SerializeField] GameObject Benemies;
-    [SerializeField]int TotalHp = 1000;
-    [SerializeField] int Hp = 1000;
+    [SerializeField]int TotalHp = 100;
+    [SerializeField] int Hp = 100;
     public static bool BossAlive = false;
     bool LaserCalled = true;
     bool secondPhyaze = true;
@@ -50,7 +50,7 @@ public class EnemyBossScript : MonoBehaviour
     }
     void Update()
     {   
-        Debug.Log("Is: " + LaserCalled);
+     
 
         if (transform.position.y > 7.2f)
         {
